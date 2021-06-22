@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const jsonPath = "../jsonfile.json";
+    const jsonPath = "jsonfile.json";
     let createFragment = document.createDocumentFragment();
     let buttonShow = document.querySelector(".content_container_button");
     let tableEl = document.querySelector(".content_container_table")
