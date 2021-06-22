@@ -1,0 +1,53 @@
+{% extends '../layouts/default.twig' %}
+{% set head_title = "Главная" %}
+{% set body_class = "home_page" %}
+{% block page %}
+    <section class="info_content">
+        {% include '../components/nav.twig' %}
+        <aside class="info">
+            <a href="#" class="logo_link">
+                <div class="logo">
+                    <!--...-->
+                </div>
+            </a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ducimus fuga voluptas deleniti, culpa
+                eius consequatur alias voluptatem ex! Ad quis corporis, recusandae natus error...</p>
+            <ol>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem, ipsum.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ol>
+        </aside>
+        <div class="content_container">
+            <table class="content_container_table">
+                <tr>
+                    <th>Ticker</th>
+                    <th>Name</th>
+                    <th>SCTR</th>
+                </tr>
+            </table>
+            <button class="button_all content_container_button">
+                Show more
+            </button>
+        </div>
+    </section>
+    <section class="info_list">
+        <div class="info_list_items info_list_background">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam totam iste, accusamus illo ut
+                necessitatibus. Doloribus recusandae ad fuga nihil?</p>
+        </div>
+        <div class="info_list_items">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ipsum quam amet reiciendis hic alias
+                nobis, quia cupiditate qui nostrum eligendi necessitatibus deleniti dolor natus id dolores dolore, porro
+                labore corrupti repellendus laboriosam esse consequatur. Ipsum quam est molestiae, fugiat reiciendis
+                suscipit laudantium aperiam consequuntur repellat! Velit voluptatum fuga magnam.</p>
+        </div>
+        <div class="info_list_items info_list_background">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione temporibus dolor aliquam enim voluptas
+                quidem.</p>
+        </div>
+    </section>
+{% endblock %}
+{% extends '../components/footer.twig' %}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{ head_title }}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body{% if body_class is defined and body_class is not empty %} class="{{ body_class }}"{% endif %}>
+<div class="sticky">
+    Lorem ipsum dolor sit amet.
+</div>
+<div class="container">
+    <header class="header_content">
+        <div class="header_content_info">
+            <h1>Lorem ipsum dolor </h1>
+        </div>
+    </header>
+
+    {% block page %}
+    {% endblock %}
+    {% block footer %}{% endblock %}
+</div>
+</body>
+</html>
